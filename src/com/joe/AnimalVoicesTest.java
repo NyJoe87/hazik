@@ -20,7 +20,7 @@ public class AnimalVoicesTest {
         System.out.println(a);
 
         //Animal referenciaval mutatunk a Dog obiektumra
-        Animal dog2 = new Dog("mops");
+        Dog dog2 = new Dog("mops");
         //heterogen kollekcio a kozos nevezo az animal interface
         //olyan obiektumokat tudunk belerakni melyek tipusa inmoplementalja az Animal interfacet
         List<Animal> allatok = new ArrayList<>();
@@ -41,6 +41,10 @@ public class AnimalVoicesTest {
 //        for (Animal allat:allatok){
 //            printAnimal(allat);
 //        }
+        Car car = new Car("BMW","Red");
+        System.out.println(car.brand);
+        System.out.println(car.colour);
+        System.out.println(car.hit(dog2));
     }
 
     //adj mezot a cow es cat classhoz,
@@ -61,4 +65,8 @@ public class AnimalVoicesTest {
     public static void changeTipus(Dog t) {
         t.setTipus("mops");
     }
+
 }
+//hozz letre egy car osztalyt, s rakj bele nehany mezot kezzel irj hozza konstruktort, settert
+//adj hozza a dog osztalyhoz egy uj mezot es ez legyen az "is alive"
+// a car osztalyban legyen egy hit metodusa ami parameterkent egy dog ot kap meg es ennek a dog nak fogja beallitani az is alive mezojet false ra

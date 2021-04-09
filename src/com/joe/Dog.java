@@ -6,6 +6,9 @@ package com.joe;
  */
 public class Dog implements Animal {
     private String tipus;
+    public String isAlive;
+
+
 
     public Dog(String tipus) {
         this.tipus = tipus;
@@ -23,6 +26,10 @@ public class Dog implements Animal {
 
     public void setTipus(String t){
         this.tipus = t;
+    }
+
+    public void setIsAlive(String i) {
+        this.isAlive = i;
     }
 }
 
